@@ -439,3 +439,12 @@ Use este bloco quando o objetivo for **entregar o jogo totalmente completo e pro
 - documentação técnica e de publicação.
 Entregue em fases com checklist, métricas e validação de qualidade por gate."
 ```
+
+### Publicação no GitHub com APK para download
+
+Para operacionalizar release contínua com download direto do APK:
+
+- Configure CI em `.github/workflows/build-android-apk.yml`
+- Configure secrets de assinatura Android no GitHub Actions
+- Gere tags semânticas (`v1.0.0`, `v1.0.1`) para anexar APK em Releases
+- Use o guia `GITHUB_APK_ENTREGA.md` como runbook oficial de publicação
