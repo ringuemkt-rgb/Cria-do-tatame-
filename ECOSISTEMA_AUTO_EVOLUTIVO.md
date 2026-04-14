@@ -312,3 +312,130 @@ Ecossistema com 9 agentes, fluxo profissional, métricas claras, qualidade de es
 - Autoevolução com aprendizado por métricas
 - Entregáveis completos (não apenas código)
 - Padrão enterprise com foco em publicação real
+
+## 🧩 Módulo de Execução Total do Jogo (Arte, Áudio, GIF e Vídeo)
+
+Use este bloco quando o objetivo for **entregar o jogo totalmente completo e profissional**, com acabamento audiovisual integral.
+
+### Entregáveis obrigatórios (Definition of Done Premium)
+
+- Build jogável completo (`.apk` e `.aab`)
+- Código-fonte organizado por domínio
+- Interface final com animações e microinterações
+- Pacote de arte final (personagens, cenários, VFX e UI kit)
+- Pacote de áudio final (trilha, SFX, vozes e mix/master)
+- Pacote de marketing visual (GIFs curtos, trailer vertical e horizontal, screenshots Play Store)
+- Documentação técnica + guia de operação + checklist de publicação
+
+### Estrutura de pastas recomendada para produção multimídia
+
+```text
+/project
+  /game
+    /scenes
+    /scripts
+    /systems
+    /resources
+  /art
+    /concept
+    /characters
+    /environments
+    /ui
+    /vfx
+    /export
+  /audio
+    /music
+    /sfx
+    /voice
+    /mix
+    /master
+  /video
+    /captures
+    /gifs
+    /trailers
+    /store_assets
+  /build
+    /debug
+    /release
+  /docs
+    /gdd
+    /tdd
+    /qa_reports
+    /play_store
+```
+
+### Pipeline visual profissional (fim-a-fim)
+
+1. **Art Direction Lock**
+   - moodboard, paleta definitiva, tipografia e guia de composição.
+2. **Produção de assets**
+   - personagens (idle/run/attack/hit/ko), cenários em camadas, VFX por tipo de ação.
+3. **Integração**
+   - atlas de sprites, naming padrão, pivots consistentes, import settings mobile.
+4. **Polish**
+   - pass de contraste, legibilidade UI, feedback visual de combate e estados.
+5. **Otimização**
+   - compressão, LOD 2D, redução de draw calls, budget de memória por cena.
+
+### Pipeline de áudio profissional (fim-a-fim)
+
+1. **Mapa de áudio por cena**
+   - menu, gameplay, vitória/derrota, transições e eventos especiais.
+2. **Camadas**
+   - música base + percussão dinâmica + stingers de impacto.
+3. **SFX táticos**
+   - golpes leves/pesados, defesa, interface, progressão e recompensa.
+4. **Voz**
+   - chamadas curtas por personagem, variação por contexto.
+5. **Mix e master para mobile**
+   - loudness consistente, sidechain leve para clareza e limitação final.
+
+### Pipeline de GIF e vídeo para divulgação
+
+- **GIFs (3 a 6 segundos):**
+  - loop de combo, finalização, menu principal e progressão do personagem.
+- **Trailer 16:9 (30–45s):**
+  - gancho inicial (0–3s), core loop (4–20s), diferenciais (21–35s), CTA (36–45s).
+- **Trailer 9:16 (15–30s):**
+  - versão curta para redes sociais.
+- **Store assets:**
+  - screenshots com hierarquia visual, texto curto e CTA claro.
+
+### Matriz de qualidade para “jogo pronto profissional”
+
+```json
+{
+  "visual_quality": {
+    "ui_legibility": "AA",
+    "animation_smoothness": ">= 55 fps perceived",
+    "art_consistency": ">= 95%"
+  },
+  "audio_quality": {
+    "mix_clarity": "passed",
+    "dynamic_range_mobile": "safe",
+    "sfx_coverage": ">= 95% dos eventos críticos"
+  },
+  "build_quality": {
+    "crash_free_sessions": ">= 99.5%",
+    "anr": "< 0.1%",
+    "apk_size_target": "< 100MB (jogo médio)"
+  },
+  "marketing_package": {
+    "gifs": ">= 6",
+    "trailers": "2 formatos",
+    "store_images": ">= 8"
+  }
+}
+```
+
+### Prompt de execução direta (copiar e colar)
+
+```text
+/create_premium "Quero o jogo 100% completo profissional com:
+- produção visual completa (UI, personagens, cenários, VFX),
+- áudio completo (trilha, SFX, voz, mix/master),
+- pacote de divulgação (GIFs, trailer 16:9, trailer 9:16, screenshots),
+- otimização máxima para Android,
+- documentação técnica e de publicação.
+Entregue em fases com checklist, métricas e validação de qualidade por gate."
+```
